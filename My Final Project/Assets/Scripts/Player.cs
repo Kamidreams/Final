@@ -12,16 +12,20 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         _playerRb = GetComponent<Rigidbody>();
+        _playerRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-         float horizontalInput = Input.GetAxis("Horizontal");
-        Vector3 forwardInput = transform.forward * Input.GetAxis("Vertical");
+        Movement();
+    }
 
-        _playerRb.AddForce(forwardInput * speed, ForceMode.Acceleration);
-        transform.Rotate(Vector3.up, horizontalInput * rotationSpeed * Time.deltaTime);
+    void Movement()
+    {
+        float xValue = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        float zValue = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+
+        transform.Translate(xValue, 0f, zValue);
     }
 }
