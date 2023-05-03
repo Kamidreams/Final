@@ -9,13 +9,13 @@ public class Moving : MonoBehaviour
     public float StartWaitTime;
 
     private int _currentPointIndex;
-    private float _waitTime;
+    private float _waitTime = 3;
 
     // Start is called before the first frame update
     void Start()
     {
         transform.position = PatrolPoints[0].position;
-        transform.rotation = PatrolPoints[0].position;
+        //transform.rotation = PatrolPoints[0].position;
         _waitTime = StartWaitTime;
     }
 
@@ -37,10 +37,15 @@ public class Moving : MonoBehaviour
                 }
                 _waitTime = StartWaitTime;
             }
-            else{
+            else
+            {
                 _waitTime -= Time.deltaTime;
             }
         }
-        //transform.Translate(Vector2.right * movespeed * Time.deltaTime);
+        else
+        {
+            transform.rotation = PatrolPoints[_currentPointIndex].rotation;
+        }
     }
+     //transform.Translate(Vector2.right * movespeed * Time.deltaTime);
 }

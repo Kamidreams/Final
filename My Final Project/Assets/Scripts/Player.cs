@@ -43,4 +43,20 @@ public class Player : MonoBehaviour
 
         transform.Translate(xValue, 0f, zValue);
     }
+
+    private void OnCollision(Collision other)
+    {
+        if(other.gameObject.tag == "Platform")
+        {
+            transform.parent = other.transform;
+        }
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if(other.gameObject.tag == "Platform")
+        {
+            transform.parent = null;
+        }
+    }
 }
