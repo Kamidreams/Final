@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Nom Nom
   - Platform
+  - Rats
   layers:
   - Default
   - TransparentFX
