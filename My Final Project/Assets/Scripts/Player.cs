@@ -53,6 +53,21 @@ public class Player : MonoBehaviour
             Debug.Log ("On platform");
             transform.parent = other.transform;
         }
+
+        if(other.gameObject.CompareTag("Spikes"))    
+        {
+            LevelManager.Instance.GameOver();
+        }
+
+        if(other.gameObject.CompareTag("Rats"))    
+        {
+            LevelManager.Instance.GameOver();
+        }
+
+        if(other.gameObject.CompareTag("Nom Nom"))    
+        {
+            LevelManager.Instance.Winner();
+        }
     }
 
     private void OnCollisionExit(Collision other)
