@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     public TextMeshProUGUI FoodCountText;
 
     [SerializeField] private bool _isGameActive = false;
-    [SerializeField] private int _foodCollected = 0;
+    public int _foodCollected = 0;
 
 void Awake()
      {

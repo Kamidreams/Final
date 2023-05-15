@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Rats
   - Spikes
+  - End
   layers:
   - Default
   - TransparentFX

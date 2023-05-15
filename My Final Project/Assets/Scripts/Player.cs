@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -64,10 +66,13 @@ public class Player : MonoBehaviour
             LevelManager.Instance.GameOver();
         }
 
-        if(other.gameObject.CompareTag("Nom Nom"))    
-        {
-            LevelManager.Instance.Winner();
-        }
+        if(other.gameObject.CompareTag("Nom Nom"))
+            {
+                if(LevelManager.Instance._foodCollected >=10)
+                {
+                   LevelManager.Instance.Winner();
+                }
+            }
     }
 
     private void OnCollisionExit(Collision other)
