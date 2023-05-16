@@ -2513,7 +2513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &88208755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4556,101 +4556,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 767aa01d961752a43a1f4c7bea4e7883, type: 3}
   m_PrefabInstance: {fileID: 1420260778}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &172713308
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_RootOrder
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -49.1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_Name
-      value: cubeTownsman
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_TagString
-      value: End
-      objectReference: {fileID: 0}
-    - target: {fileID: 8417361359673230750, guid: baca125e41d84824a8d5771347965946, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 07d2dacbb0241bb4c8bbb5aba17fdd46, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: baca125e41d84824a8d5771347965946, type: 3}
---- !u!1 &172713309 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: baca125e41d84824a8d5771347965946, type: 3}
-  m_PrefabInstance: {fileID: 172713308}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &172713310
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172713309}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.7030144, z: 1.0567658}
-  m_Center: {x: 0, y: 0.817009, z: 0.028383046}
 --- !u!1001 &175425123
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float rotationSpeed = 10f;
 
     private Rigidbody _playerRb;
+    public int _foodCollected = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -38,14 +39,10 @@ public class Player : MonoBehaviour
         {
 		    transform.position += Vector3.back* speed * Time.deltaTime;
 	    }
-    }
-
-    void Movement()
-    {
-        float xValue = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        float zValue = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-
-        transform.Translate(xValue, 0f, zValue);
+        if(_foodCollected = 10)
+        {
+            LevelManager.Instance.WinnerPanel.SetActive(true);
+        }
     }
 
     private void OnCollisionEnter(Collision other)
@@ -65,14 +62,6 @@ public class Player : MonoBehaviour
         {
             LevelManager.Instance.GameOver();
         }
-
-        if(other.gameObject.CompareTag("Nom Nom"))
-            {
-                if(LevelManager.Instance._foodCollected >=10)
-                {
-                   LevelManager.Instance.Winner();
-                }
-            }
     }
 
     private void OnCollisionExit(Collision other)
