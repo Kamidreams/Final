@@ -63,16 +63,18 @@ void Awake()
 
     public void Winner()
     {
-        Time.timeScale = 0;
-        if(_foodCollected >= 10)
-        {
-            WinnerPanel.SetActive(true);
-        }
+        Time.timeScale = 0; 
+        WinnerPanel.SetActive(true);
+        
     }
 
     public void UpdateLevelFoodCount(int amount)
-    {
+    { 
         _foodCollected += amount;
         FoodCountText.text = _foodCollected.ToString();
+        if(_foodCollected >= 10)
+        {
+            Winner();
+        }
     }
 }

@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     public float rotationSpeed = 10f;
 
     private Rigidbody _playerRb;
-    public int _foodCollected = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -38,13 +37,8 @@ public class Player : MonoBehaviour
 	if (Input.GetKey(KeyCode.DownArrow))
         {
 		    transform.position += Vector3.back* speed * Time.deltaTime;
-	    }
-        if(_foodCollected = 10)
-        {
-            LevelManager.Instance.WinnerPanel.SetActive(true);
         }
     }
-
     private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag == "Platform")
